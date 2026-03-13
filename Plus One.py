@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: List[int]
         """
         n = len(digits)
-        for i in range(n - 1, -1, -1):
+        for i in range(n - 1, -1, -1):# Duyệt mảng digits từ cuối về đầu để thực hiện phép cộng 1.
             if digits[i] < 9:
                 digits[i] += 1
                 return digits
