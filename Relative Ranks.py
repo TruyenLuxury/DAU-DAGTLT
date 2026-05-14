@@ -6,7 +6,7 @@ class Solution(object):
         """
         sorted_scores = sorted(score, reverse=True)
         rank = {}
-        for i, s in enumerate(sorted_scores):
+        for i, s in enumerate(sorted_scores):# Duyệt qua danh sách điểm đã được sắp xếp và gán thứ hạng tương ứng cho mỗi điểm
             if i == 0:
                 rank[s] = "Gold Medal"
             elif i == 1:
@@ -18,5 +18,4 @@ class Solution(object):
         result = []
         for s in score:
             result.append(rank[s])
-
         return result

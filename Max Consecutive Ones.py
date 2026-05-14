@@ -9,7 +9,7 @@ class Solution(object):
         for num in nums:
             if num == 1:
                 count += 1
-                maxCount = max(maxCount, count)
+                maxCount = max(maxCount, count) # Cập nhật maxCount nếu count hiện tại lớn hơn maxCount
             else:
                 count = 0
         return maxCount
