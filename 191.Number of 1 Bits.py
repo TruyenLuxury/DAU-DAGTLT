@@ -6,6 +6,6 @@ class Solution(object):
         """
         dem = 0
         while (n):
-            dem += n & 1 # Tăng biến đếm nếu bit cuối cùng của n là 1
-            n >>= 1 # Dịch n sang phải 1 bit để kiểm tra bit tiếp theo
+            dem += n & 1
+            n >>= 1
         return dem
