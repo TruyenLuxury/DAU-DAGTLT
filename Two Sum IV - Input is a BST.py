@@ -19,5 +19,5 @@ class Solution(object):
             if complement in seen:
                 return True
             seen.add(node.val)
-            return dfs(node.left) or dfs(node.right)
+            return dfs(node.left) or dfs(node.right)# Đệ quy duyệt cây con bên trái và bên phải. Nếu một trong hai cây con trả về True, thì hàm dfs sẽ trả về True.
         return dfs(root)
